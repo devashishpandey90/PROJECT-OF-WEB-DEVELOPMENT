@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav>
+    <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="company-logo">
+            <img src="images.jpg" alt="company-logo">
+        </a>
+        <div class="nav-linkd">
+            <ul class="flex">
+            <li class="hover-link nav-item" id="pol" onclick="onNavItemClick('pol')">Politics</li>
+            <li class="hover-link nav-item" id="fin"onclick="onNavItemClick('fin')">Finance</li>
+            <li class="hover-link nav-item" id="sport"onclick="onNavItemClick('sport')">Sports</li>
+            </ul>
+        </div>
+        <div class="searchbar flex">
+            <input id="search-text" type="text" class="news-input" placeholder="e.g science">
+             <button id="search-button" class="search-button">Search</button>
+        </div>
+    </div>
+ </nav>
+<main>
+    <div class="cards-container container flex" id="cards-container">
+               
+              
+    </div>
+
+</main>
+      <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-images" id="news-img">
+            </div>
+            <div class="card-content">
+                <h1 id="news-title">This is the title</h1>
+                <h6 class="news-source" id="news-source">End gadget 23/4/23</h6>
+                <p class="news-desc" id="news-desc">The cash will be sent to your UPI id on next Monday (end of the DAY) (you can fill the form multiple times by Sunday night, and your final amount will be sent in cash to your bank)</p>
+            </div>
+          </div>
+      </template>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
